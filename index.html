@@ -1,0 +1,289 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Workshop Booking — FOSSEE (Enhanced)</title>
+
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Optional: Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --accent:#0d6efd; /* bootstrap primary fallback */
+      --muted:#6c757d;
+      --card-radius:14px;
+    }
+    html,body{
+      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      height:100%;
+      background: #f8f9fa;
+      -webkit-font-smoothing:antialiased;
+    }
+    .hero {
+      background: linear-gradient(180deg, rgba(13,110,253,0.06), rgba(13,110,253,0.02));
+      border-radius: 16px;
+      padding: 1.25rem;
+    }
+    .brand {
+      font-weight:700;
+      letter-spacing:0.2px;
+    }
+    .lead-compact {
+      margin-bottom:0.6rem;
+      color:#3b4046;
+      line-height:1.4;
+    }
+    .feature-list li { margin-bottom: .35rem; }
+    .stat-card {
+      border-radius: var(--card-radius);
+      box-shadow: 0 6px 18px rgba(17,24,39,0.06);
+      background: #fff;
+      padding: .9rem;
+    }
+    /* Mobile first readability tweaks */
+    h1,h2,h3{ margin-bottom:.45rem; }
+    .small-note { font-size: .85rem; color: var(--muted); }
+    .chip {
+      display:inline-block;
+      padding: .25rem .6rem;
+      border-radius: 999px;
+      background: rgba(13,110,253,0.08);
+      color: var(--accent);
+      font-weight:600;
+      font-size:.85rem;
+    }
+    /* Accessibility: focus outline visible */
+    a:focus, button:focus { outline: 3px solid rgba(13,110,253,0.18); outline-offset: 2px; }
+
+    /* Footer */
+    footer { font-size:.85rem; color:var(--muted); padding:1rem 0; }
+
+    /* Keep layout narrow on very small screens */
+    .container-narrow { max-width: 980px; margin: 0 auto; }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-white shadow-sm mb-3">
+  <div class="container container-narrow">
+    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect width="24" height="24" rx="5" fill="#0d6efd" opacity="0.12"></rect>
+        <path d="M7 12h10M7 8h10M7 16h6" stroke="#0d6efd" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div>
+        <div class="brand">Workshop Booking</div>
+        <div class="small-note">Coordinator & Instructor portal — FOSSEE</div>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+      aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link active" href="#features">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#stats">Stats</a></li>
+        <li class="nav-item"><a class="nav-link" href="#how">How it works</a></li>
+        <li class="nav-item ms-lg-3"><a class="btn btn-outline-primary btn-sm" href="#get-started">Get started</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container container-narrow pb-4">
+  <!-- Hero -->
+  <section class="hero mb-3">
+    <div class="d-flex justify-content-between align-items-start gap-3 flex-column flex-md-row">
+      <div>
+        <h1 class="h4">Make, propose or book workshops — fast on mobile</h1>
+        <p class="lead-compact">Coordinators can book workshops from instructor posts or propose dates — designed for easy
+          reading and fast navigation on small screens.</p>
+        <div class="mt-2 d-flex gap-2 flex-wrap">
+          <span class="chip" aria-hidden="true">Mobile-first</span>
+          <span class="chip" aria-hidden="true">Accessible</span>
+          <span class="chip" aria-hidden="true">Fast</span>
+        </div>
+      </div>
+
+      <div class="text-md-end mt-3 mt-md-0">
+        <a class="btn btn-primary btn-sm me-1" href="#get-started">Book a workshop</a>
+        <a class="btn btn-outline-secondary btn-sm" href="https://github.com/FOSSEE/workshop_booking" target="_blank" rel="noopener">View repo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features & quick actions -->
+  <section id="features" class="mb-3">
+    <h2 class="h6">Features</h2>
+    <div class="row g-3">
+      <div class="col-12 col-md-7">
+        <div class="card p-3 stat-card">
+          <h3 class="h6 mb-2">What you can do</h3>
+          <ul class="feature-list">
+            <li><strong>Instructors only:</strong> Monthly workshop count, upcoming workshops, profile stats, comments on coordinator profiles.</li>
+            <li><strong>Open to all:</strong> Browse workshops, request or propose dates, search and filter by topic and region.</li>
+            <li><strong>Coordinator actions:</strong> Accept/decline proposals and schedule an event in 2 taps on mobile.</li>
+          </ul>
+          <div class="mt-2 small-note">Accessible labels, clear CTA placement and simplified flows reduce taps on a phone.</div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-5">
+        <div class="row g-2">
+          <div class="col-6 col-lg-12">
+            <div class="stat-card h-100">
+              <div class="d-flex justify-content-between align-items-start">
+                <div>
+                  <div class="small-note">Upcoming</div>
+                  <div class="h5 mb-0">3 workshops</div>
+                </div>
+                <div class="small-note text-end">Next: 12 Sep</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-lg-12">
+            <div class="stat-card h-100">
+              <div class="small-note">Instructors</div>
+              <div class="h5 mb-0">25</div>
+              <div class="small-note mt-1">Active this month</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works (accordion) -->
+  <section id="how" class="mb-3">
+    <h2 class="h6">How it works</h2>
+    <div class="accordion" id="howAcc">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="false" aria-controls="collapseOne">
+            Quick flow for coordinators (2 taps)
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#howAcc">
+          <div class="accordion-body">
+            Search > Select workshop > Propose dates or Accept > Confirm. The UI minimizes form fields on mobile and uses date-picker native controls for speed.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                  aria-expanded="false" aria-controls="collapseTwo">
+            Instructors: post & manage
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#howAcc">
+          <div class="accordion-body">
+            Instructors post details with required tags (topic, target audience, prerequisites). Posts are compressed on mobile with expand/collapse to keep listing lengths short.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get started card & simple form -->
+  <section id="get-started" class="mb-4">
+    <div class="card stat-card">
+      <div class="d-flex justify-content-between align-items-start">
+        <div>
+          <h3 class="h6">Quick booking (prototype)</h3>
+          <div class="small-note">This is a UI prototype — integrate backend endpoints for real booking.</div>
+        </div>
+      </div>
+
+      <!-- Minimal form to improve mobile flow -->
+      <form id="bookingForm" class="row g-2 mt-2" onsubmit="return handleSubmit(event)">
+        <div class="col-12 col-md-6">
+          <label class="form-label visually-hidden" for="role">Role</label>
+          <select id="role" class="form-select form-select-sm" aria-label="Your role">
+            <option value="coordinator">Coordinator</option>
+            <option value="instructor">Instructor</option>
+          </select>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label class="form-label visually-hidden" for="topic">Workshop topic</label>
+          <input id="topic" class="form-control form-control-sm" type="text" placeholder="Topic (e.g., Python basics)" required>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <label class="form-label visually-hidden" for="date">Preferred date</label>
+          <input id="date" class="form-control form-control-sm" type="date" aria-label="Preferred date" required>
+        </div>
+
+        <div class="col-12 col-md-6 d-grid">
+          <button class="btn btn-primary btn-sm" type="submit">Propose / Book</button>
+        </div>
+      </form>
+
+      <div id="formMsg" class="mt-2 small-note" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <hr>
+
+  <footer class="text-center">
+    <div>FOSSEE — Workshop Booking (UI/UX Enhancement)</div>
+    <div class="small-note">Designed for quick mobile workflows · Built with Bootstrap · Accessible & responsive</div>
+  </footer>
+</main>
+
+<!-- Bootstrap JS (bundle with Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Small JS to simulate quick booking flow and show accessible message.
+  function handleSubmit(e){
+    e.preventDefault();
+    const role = document.getElementById('role').value;
+    const topic = document.getElementById('topic').value.trim();
+    const date = document.getElementById('date').value;
+    const msgEl = document.getElementById('formMsg');
+
+    if(!topic || !date){
+      msgEl.textContent = 'Please enter topic and date.';
+      return false;
+    }
+
+    // simulate a lightweight optimistic UI flow (no network here).
+    msgEl.textContent = `Thanks — ${role} request for "${topic}" on ${date} recorded (prototype).`;
+    // clear fields on mobile
+    document.getElementById('topic').value = '';
+    document.getElementById('date').value = '';
+    // Announce for screen readers
+    msgEl.setAttribute('role','status');
+
+    // For real integration: send data to backend endpoint via fetch().
+    return false;
+  }
+
+  // Smooth scroll for nav anchors (better on mobile)
+  document.querySelectorAll('a[href^="#"]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      const targetId = a.getAttribute('href').slice(1);
+      if(!targetId) return;
+      const el = document.getElementById(targetId);
+      if(el){
+        e.preventDefault();
+        el.scrollIntoView({behavior:'smooth', block:'start'});
+        history.replaceState(null,'', '#'+targetId);
+      }
+    });
+  });
+</script>
+</body>
+</html>
