@@ -68,7 +68,7 @@ May produce overly technical hints that are difficult for beginners.
 Requires careful fine-tuning to adapt for educational guidance instead of pure code correction.
 
 
-Trade-offs Considered
+Trade-offs Considered :-
 
 Accuracy vs. Interpretability: More complex models (like GPT-J) may give highly accurate analysis but produce explanations that are hard for students to follow.
 
