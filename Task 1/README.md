@@ -3,7 +3,7 @@
 This branch contains a mobile-first UI/UX enhancement for the original FOSSEE `workshop_booking` site. It is implemented using plain HTML, Bootstrap 5 and a tiny amount of vanilla JavaScript. The goal is to improve readability, navigation, and speed on small screens while keeping the original site structure intact.
 
 ## Design principles
-**Mobile-first**: Layout and content prioritized for small screens; navigation collapses into a simple navbar and CTAs are prominent.
+**Mobile-first**: I have focused on improving readability by choosing layout and content prioritized for small screens; navigation collapses into a simple navbar and CTAs are prominent.
 **Clarity & hierarchy**: Short headings, compact paragraphs, chips and stat cards to surface the most important info.
 **Accessible & fast**: Large tap targets, visible focus outlines, native controls (date input), minimal JS and CDN-only CSS for quick load.
 **Progressive enhancement**: Works without JavaScript at basic level; JS adds smooth scrolling and optimistic UI interactions.
